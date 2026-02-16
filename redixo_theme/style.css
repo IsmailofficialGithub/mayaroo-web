@@ -1,0 +1,210 @@
+/*
+Theme Name: Redixo Custom Theme
+Author: Antigravity AI
+Description: A professional conversion of the Redixo HTML template.
+Version: 1.0
+Text Domain: redixo
+*/
+
+/* Counter Section Hover Animations */
+.counter-card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.counter-card-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.counter-card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.counter-card-hover:hover::before {
+  left: 100%;
+}
+
+.counter-card-hover .counter h2 {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.counter-card-hover:hover .counter h2 {
+  transform: scale(1.05);
+}
+
+.counter-card-hover .content .text,
+.counter-card-hover .content .decs {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.counter-card-hover:hover .content .text {
+  transform: translateX(5px);
+}
+
+.counter-card-hover:hover .content .decs {
+  opacity: 0.9;
+}
+
+/* Enhanced scroll animation for counter cards */
+.counter-section-4__items .about__page-item-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  .counter-section-4__items .about__page-item-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .counter-section-4__items .about__page-item-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.counter-section-4__items .about__page-card {
+  will-change: transform, opacity;
+}
+
+/* Color white utility */
+.color-white {
+  color: #ffffff !important;
+}
+
+.counter-section-4__label.color-white .label-text,
+.counter-section-4__heading.color-white .title {
+  color: #ffffff !important;
+}
+
+/* Service row reverse - button on right */
+.service-row-reverse {
+  direction: rtl;
+}
+
+.service-row-reverse > * {
+  direction: ltr;
+}
+
+/* Brand Section 2 - Two Row Layout with Scrolling Text */
+.brand-section-2__content {
+  margin-top: 60px;
+}
+
+.brand-section-2__row {
+  margin-bottom: 60px;
+}
+
+.brand-section-2__row:last-child {
+  margin-bottom: 0;
+}
+
+.brand-section-2__column {
+  padding: 40px 0;
+}
+
+.brand-column-left {
+  text-align: left;
+}
+
+.brand-column-right {
+  text-align: right;
+}
+
+@media only screen and (max-width: 991px) {
+  .brand-column-left,
+  .brand-column-right {
+    text-align: left;
+  }
+  
+  .brand-section-2__row {
+    margin-bottom: 50px;
+  }
+}
+
+.brand-section-2__column .column-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: #ffffff !important;
+  font-family: var(--font_BDOGrotesk);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.brand-section-2__box {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.brand-text-slider {
+  overflow: visible;
+}
+
+.brand-text-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  transition-timing-function: linear;
+}
+
+.brand-text-slider .swiper-slide {
+  width: auto;
+  flex-shrink: 0;
+}
+
+.brand-section-2__text-item {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #ffffff !important;
+  font-family: var(--font_body);
+  padding: 12px 35px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.brand-section-2__text-item:hover {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .brand-section-2__text-item {
+  color: #ffffff !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .brand-section-2__column {
+    padding: 30px 0;
+  }
+  
+  .brand-section-2__row {
+    margin-bottom: 40px;
+  }
+  
+  .brand-section-2__column .column-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .brand-section-2__text-item {
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-right: 10px;
+  }
+}
