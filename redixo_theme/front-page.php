@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 <?php $t = get_template_directory_uri(); ?>
 
 <main>
@@ -67,19 +67,6 @@
             <div class="hero-section-4__thumb" data-image="<?php echo $t; ?>/assets/imgs/hero/hero-4-full-6.png">
               <img src="<?php echo $t; ?>/assets/imgs/hero/hero-4-img-6.png" alt="img not found">
             </div>
-          </div>
-          <div class="header__nav pos-center">
-            <nav class="main-menu">
-              <?php
-              wp_nav_menu(array(
-                'theme_location' => 'primary',
-                'container'     => false,
-                'menu_class'    => '',
-                'fallback_cb'   => 'redixo_fallback_menu',
-                'items_wrap'    => '<ul>%3$s</ul>',
-              ));
-              ?>
-            </nav>
           </div>
         </div>
       </div>

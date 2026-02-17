@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +7,12 @@
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 
   <div class="loader-wrap">
     <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
       <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
     </svg>
-
     <div class="loader-wrap-heading">
       <div class="load-text">
         <span>M</span><span>A</span><span>Y</span><span>A</span><span>R</span><span>O</span><span>O</span>
@@ -23,14 +20,12 @@
     </div>
   </div>
 
-  <!-- Sroll to top -->
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
     </svg>
   </div>
 
-  <!-- side toggle start -->
   <aside class="fix">
     <div class="side-info">
       <div class="side-info-content">
@@ -46,7 +41,7 @@
         </div>
         <div class="mobile-menu d-xl-none fix"></div>
         <div class="offset-button">
-          <a href="<?php echo esc_url(function_exists('redixo_get_page_permalink') ? redixo_get_page_permalink('contact') : home_url('/contact')); ?>" class="rr-btn">
+          <a href="<?php echo esc_url(home_url('/contact')); ?>" class="rr-btn">
             <span class="btn-wrap">
               <span class="text-one">Let's Talk</span>
               <span class="text-two">Let's Talk</span>
@@ -74,16 +69,7 @@
     </div>
   </aside>
   <div class="offcanvas-overlay"></div>
-  <!-- side toggle end -->
 
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
-
-  <!-- Theme Toggle Button -->
-  <div id="theme-toggle" class="switcher-button" title="Toggle Dark/Light Mode">
-    <div class="switcher-button-inner">
-      <i class="fas fa-sun icon-light"></i>
-      <i class="fas fa-moon icon-dark"></i>
-    </div>
-  </div>

@@ -230,3 +230,78 @@ function redixo_test_page_handler() {
     }
 }
 add_action('template_redirect', 'redixo_test_page_handler', 1);
+
+// Force dark theme on About and Services pages
+function redixo_about_page_dark_theme($classes) {
+    // Check if we're using the About or Services page template
+    if (is_page_template('page-about.php') || is_page_template('page-services.php')) {
+        $classes[] = 'dark';
+    }
+    return $classes;
+}
+add_filter('body_class', 'redixo_about_page_dark_theme');
+
+// Auto-assign templates based on page slug
+function redixo_auto_assign_page_templates($template) {
+    if (is_page()) {
+        global $post;
+        
+        // Make sure $post exists
+        if (!$post || !isset($post->post_name)) {
+            return $template;
+        }
+        
+        $slug = $post->post_name;
+        
+        // Auto-assign service template
+        if ($slug === 'service' || $slug === 'services' || $slug === 'srvs') {
+            $service_template = get_template_directory() . '/page-service.php';
+            if (file_exists($service_template)) {
+                return $service_template;
+            }
+        }
+        
+        // Auto-assign about template
+        if ($slug === 'about' || $slug === 'about-us') {
+            $about_template = get_template_directory() . '/page-about.php';
+            if (file_exists($about_template)) {
+                return $about_template;
+            }
+        }
+        
+        // Auto-assign portfolio template
+        if ($slug === 'portfolio' || $slug === 'work') {
+            $portfolio_template = get_template_directory() . '/page-portfolio.php';
+            if (file_exists($portfolio_template)) {
+                return $portfolio_template;
+            }
+        }
+        
+        // Auto-assign team template
+        if ($slug === 'team') {
+            $team_template = get_template_directory() . '/page-team.php';
+            if (file_exists($team_template)) {
+                return $team_template;
+            }
+        }
+        
+        // Auto-assign contact template
+        if ($slug === 'contact' || $slug === 'contact-us') {
+            $contact_template = get_template_directory() . '/page-contact.php';
+            if (file_exists($contact_template)) {
+                return $contact_template;
+            }
+        }
+        
+        // Auto-assign blog template
+        if ($slug === 'blog' || $slug === 'news') {
+            $blog_template = get_template_directory() . '/page-blog.php';
+            if (file_exists($blog_template)) {
+                return $blog_template;
+            }
+        }
+    }
+    
+    return $template;
+}
+add_filter('template_include', 'redixo_auto_assign_page_templates', 100);
