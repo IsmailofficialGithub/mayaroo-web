@@ -2031,6 +2031,10 @@
     .header__button {
         display: flex;
         gap: 15px;
+        @media #{$lg} {
+            position: absolute;
+            right: 20px;
+        }
     }
 
     &__inner {
@@ -2044,7 +2048,7 @@
         @media #{$lg} {
             height: 80px;
             gap: 10px;
-            justify-content: space-between;
+            justify-content: center;
             padding: 0 20px;
             margin-top: 20px;
         }

@@ -87,7 +87,7 @@
             <div class="header-area-4__inner">
               <div class="header__logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo/logo-4-dark.png" class="normal-logo" alt="Site Logo">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo/Asset-1-4x.png" class="normal-logo" alt="Mayaroo Logo">
                 </a>
               </div>
               <div class="header__button d-xl-none">

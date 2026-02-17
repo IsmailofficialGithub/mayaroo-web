@@ -3655,6 +3655,12 @@ section {
   display: flex;
   gap: 15px;
 }
+@media only screen and (max-width: 1199px) {
+  .header-area-4 .header__button {
+    position: absolute;
+    right: 20px;
+  }
+}
 .header-area-4__inner {
   display: flex;
   align-items: center;
@@ -3668,7 +3674,7 @@ section {
   .header-area-4__inner {
     height: 80px;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
     margin-top: 20px;
   }

@@ -114,58 +114,6 @@
   </section>
   <!-- about-section-4 end -->
 
-  <!-- Counter Section start -->
-  <section class="counter-section-4 rr-bg-color section-space fade-wrapper">
-    <div class="container rr-container-1650">
-      <div class="counter-section-4__wrapper">
-        <div class="counter-section-4__label fade-top">
-          <span class="label-text">Beyond promises</span>
-        </div>
-        <div class="counter-section-4__heading fade-top">
-          <h2 class="title rr_title_anim">Where brands turn into measurable growth</h2>
-        </div>
-        <div class="counter-section-4__items fade-top">
-          <div class="about__page-item-box">
-            <div class="about__page-card counter-card-hover" data-speed="0.9">
-              <div class="content">
-                <h3 class="text">Years of experience</h3>
-              </div>
-              <div class="counter">
-                <h2><span class="odometer" data-count="10">0</span><span class="plus">+</span></h2>
-              </div>
-              <div class="content">
-                <p class="decs">A decade of doing the work.</p>
-              </div>
-            </div>
-            <div class="about__page-card card-2 counter-card-hover" data-speed="0.9">
-              <div class="content">
-                <h3 class="text">Revenue generated for clients</h3>
-              </div>
-              <div class="counter">
-                <h2>$<span class="odometer" data-count="8">0</span>.<span>3</span><span class="plus">M+</span></h2>
-              </div>
-              <div class="content">
-                <p class="decs">No fairy dust — just work.</p>
-              </div>
-            </div>
-            <div class="about__page-card card-3 counter-card-hover" data-speed="0.9">
-              <div class="content">
-                <h3 class="text">Ad Spend Managed</h3>
-              </div>
-              <div class="counter">
-                <h2>$<span class="odometer" data-count="804">0</span><span class="plus">k+</span></h2>
-              </div>
-              <div class="content">
-                <p class="decs">We test till the excuses run out.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Counter Section end -->
-
   <!-- about-section-2__area start -->
   <section class="about-section-2__area fade-wrapper section-space">
     <div class="container rr-container-1650">
