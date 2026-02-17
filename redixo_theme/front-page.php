@@ -95,7 +95,7 @@
     <div class="container rr-container-1650">
       <div class="about-section-4__wrapper">
         <div class="icon">
-          <img src="<?php echo $t; ?>/assets/imgs/about/about-4-icon.png" alt="icon">
+          <img src="<?php echo $t; ?>/assets/imgs/logo/thumb.png" alt="icon" width="100" height="100">
         </div>
         <div class="about-section-4__content">
         <h2 class="title text-invert">Blend creativity, data, and AI to create systems <br>hat drive real results. From brand identity to performance marketing<br> ,  we help you reach people who become customers.</h2>
