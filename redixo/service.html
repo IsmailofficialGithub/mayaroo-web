@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body class="dark">
 
   <div class="loader-wrap">
     <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
@@ -106,7 +106,7 @@
               <div class="header__logo">
                 <a href="index.html">
                   <img src="assets/imgs/logo/logo.png" class="normal-logo show-light" alt="Site Logo">
-                  <img  src="assets/imgs/logo/logo-4-dark.png" class="normal-logo show-dark" alt="Site Logo">
+                  <img src="assets/imgs/logo/logo-4-dark.png" class="normal-logo show-dark" alt="Site Logo">
                 </a>
               </div>
               <div class="header__nav pos-center">
@@ -165,7 +165,8 @@
                 </a>
                 <div class="header__navicon">
                   <button class="side-toggle show-light"><img src="assets/imgs/header/icon.svg" alt="image"></button>
-                  <button class="side-toggle show-dark"><img src="assets/imgs/header/icon-dark.svg" alt="image"></button>
+                  <button class="side-toggle show-dark"><img src="assets/imgs/header/icon-dark.svg"
+                      alt="image"></button>
                 </div>
               </div>
 
@@ -232,7 +233,7 @@
           <div class="breadcrumb-section__wrapper">
             <div class="container rr-container-1650">
               <div class="breadcrumb-section__sub-heading">
-                <h3 class="sub-title">{Our Services}</h3>
+                <h3 class="sub-title">Our Services</h3>
               </div>
               <div class="row">
                 <div class="col-xl-9 col-lg-8">
@@ -244,7 +245,8 @@
                 </div>
                 <div class="col-xl-3 col-lg-4">
                   <div class="breadcrumb-section__content">
-                    <p class="decs">Each item is crafted with the utmost care to reflect the <br> essence of the client, blending timeless craftsmanship <br> with modern trends.</p>
+                    <p class="decs">Each item is crafted with the utmost care to reflect the <br> essence of the client,
+                      blending timeless craftsmanship <br> with modern trends.</p>
                     <a class="breadcrumb-btn" href="service-details.html">Our Services </a>
                   </div>
                 </div>
@@ -505,7 +507,10 @@
 
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>People know what an FAQ is, so make that your page title. Don’t overcomplicate things by calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions section on their Contact page, but you can create your own page and put it right in your website navigation menu</p>
+                        <p>People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
+                          calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
+                          section on their Contact page, but you can create your own page and put it right in your
+                          website navigation menu</p>
                       </div>
                     </div>
                   </div>
@@ -661,12 +666,7 @@
     </div>
   </div>
 
-  <div id="theme-toggle" class="switcher-button" title="Toggle Dark/Light Mode">
-    <div class="switcher-button-inner">
-      <i class="fas fa-sun icon-light"></i>
-      <i class="fas fa-moon icon-dark"></i>
-    </div>
-  </div>
+  <!-- Theme toggle removed - Dark mode only -->
   <!-- Dependencies JS Files -->
   <script src="assets/vandor/jquery/jquery.js"></script>
   <script src="assets/vandor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -688,7 +688,13 @@
   <script src="assets/vandor/common-js/common.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <!-- Force Dark Mode Only -->
+  <script>
+    // Force dark mode and prevent theme switching
+    document.body.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+  </script>
+
 </body>
 
 </html>
-

@@ -1,25 +1,15 @@
 <?php
 /**
- * Template Name: Service Page
- * Template for Service page
+ * Template Name: Services Page
+ * Template for Services page
  */
 
-// Minimal test - if you see this, the template is loading
-echo "<!DOCTYPE html><html><head><title>Service Test</title></head><body>";
-echo "<h1>SERVICE TEMPLATE IS LOADING</h1>";
-echo "<p>If you see this, the template file is working.</p>";
-
-// Now try to load header
-try {
-    get_header();
-} catch (Exception $e) {
-    echo "<p>Error loading header: " . $e->getMessage() . "</p>";
-}
-
+get_header();
 $t = get_template_directory_uri();
 ?>
 
 <main>
+  <!-- hero area start -->
   <section class="breadcrumb-section service-pages">
     <div class="breadcrumb-section__wrapper">
       <div class="container rr-container-1650">
@@ -45,6 +35,8 @@ $t = get_template_directory_uri();
       </div>
     </div>
   </section>
+
+  <!-- hero area end -->
 
   <section class="service-page-area section-space-bottom fade-wrapper">
     <div class="container rr-container-1650">
@@ -352,11 +344,10 @@ $t = get_template_directory_uri();
 
 </main>
 
-<?php 
-try {
-    get_footer();
-} catch (Exception $e) {
-    echo "<p>Error loading footer: " . $e->getMessage() . "</p>";
-}
-echo "</body></html>";
-?>
+<script>
+  // Force dark mode and prevent theme switching
+  document.body.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
+</script>
+
+<?php get_footer(); ?>

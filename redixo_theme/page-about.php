@@ -11,7 +11,7 @@ get_header(); ?>
     <div class="breadcrumb-section__wrapper">
       <div class="container rr-container-1650">
         <div class="breadcrumb-section__sub-heading hero">
-          <h3 class="sub-title _split_text">{Who we are}</h3>
+          <h3 class="sub-title _split_text">Who we are</h3>
         </div>
         <div class="row">
           <div class="col-xl-9 col-lg-8">
@@ -41,7 +41,7 @@ get_header(); ?>
     <div class="container rr-container-1650">
       <div class="about__page-content-box fade-top">
         <div class="sub-content">
-          <h3 class="sub-title">{Who we are}</h3>
+          <h3 class="sub-title">Who we are</h3>
           <div class="about__page-list">
             <ul>
               <li>Creativity</li>
@@ -96,14 +96,14 @@ get_header(); ?>
       <div class="row">
         <div class="col-xl-6 col-lg-6">
           <div class="mission-vision-box fade-top">
-            <h3 class="sub-title">{Mission}</h3>
+            <h3 class="sub-title">Mission</h3>
             <h2 class="title">Mission</h2>
             <p class="decs">To help businesses grow through structured branding, performance marketing, SEO, and AI-powered digital systems that turn attention into visibility, leads, and revenue.</p>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6">
           <div class="mission-vision-box fade-top">
-            <h3 class="sub-title">{Vision}</h3>
+            <h3 class="sub-title">Vision</h3>
             <h2 class="title">Vision</h2>
             <p class="decs">To become a globally trusted digital marketing agency where creativity, data, and automation work together to build brands that scale.</p>
           </div>
@@ -115,8 +115,8 @@ get_header(); ?>
   <section class="team-section-4 team-section-4-about-page section-space-top fade-wrapper">
     <div class="container rr-container-1650">
       <div class="section-3__info hero">
-        <h3 class="sub-title _split_text">{Our Team}</h3>
-        <h3 class="title rr-char-animation">Meet the talented squad </h3>
+        <h3 class="sub-title _split_text">Our Team</h3>
+        <h3 class="title rr-char-animation">Meet the talented squad</h3>
       </div>
       <div class="team-section-4__wrapper fade-top">
         <div class="team-section-4__item">
@@ -159,5 +159,12 @@ get_header(); ?>
     </div>
   </section>
 </main>
+
+<!-- Force Dark Mode Only on About Page -->
+<script>
+  // Force dark mode and prevent theme switching
+  document.body.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
+</script>
 
 <?php get_footer(); ?>

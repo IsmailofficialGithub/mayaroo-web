@@ -632,23 +632,27 @@
 
   // Page load এ check করি body.dark আছে কিনা
   const toggleBtn = document.getElementById('theme-toggle');
-  if (document.body.classList.contains('dark')) {
-    toggleBtn.classList.add('dark-mode');
-  } else {
-    toggleBtn.classList.add('light-mode');
-  }
 
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-
+  // Check if toggleBtn exists before trying to use it
+  if (toggleBtn) {
     if (document.body.classList.contains('dark')) {
-      toggleBtn.classList.remove('light-mode');
       toggleBtn.classList.add('dark-mode');
     } else {
-      toggleBtn.classList.remove('dark-mode');
       toggleBtn.classList.add('light-mode');
     }
-  });
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+
+      if (document.body.classList.contains('dark')) {
+        toggleBtn.classList.remove('light-mode');
+        toggleBtn.classList.add('dark-mode');
+      } else {
+        toggleBtn.classList.remove('dark-mode');
+        toggleBtn.classList.add('light-mode');
+      }
+    });
+  }
 
 
 })(jQuery);
